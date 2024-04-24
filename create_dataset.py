@@ -55,10 +55,14 @@ for index, row in df.iterrows():
     else:
         intents[intent] = {'tag': intent, 'patterns': [question], 'responses': [answer]}
 
+intents_list = []
 
-intents_list = [{'tag': intent_data['tag'], 'patterns': intent_data['patterns'], 'responses': intent_data['responses']} for intent_data in intents.values()]
+with open('./data/greeting.json', 'r') as f:
+    greeting_data = json.load(f)
+    intents_list.extend(greeting_data)
 
-
+quora_list = [{'tag': intent_data['tag'], 'patterns': intent_data['patterns'], 'responses': intent_data['responses']} for intent_data in intents.values()]
+intents_list.extend(quora_list)
 # Save intents to JSON file
 with open('intents.json', 'w') as json_file:
     json.dump({'intents': intents_list}, json_file, indent=4)
