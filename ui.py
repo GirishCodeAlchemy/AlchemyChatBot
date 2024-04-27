@@ -92,9 +92,8 @@ class ChatbotInterface(Frame):
 
     def clear_chat(self):
         self.text_box.config(state=NORMAL)
-#         self.last_sent_label(date=" ")
-        self.text_box.delete(2, END)
-        self.text_box.delete(2, END)
+        # Delete all text from the text box
+        self.text_box.delete("1.0", END)
         self.text_box.config(state=DISABLED)
 
     def chatexit(self):
