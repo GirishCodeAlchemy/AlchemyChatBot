@@ -24,7 +24,7 @@ class ChatbotInterface(Frame):
         menu = Menu(self.master)
         self.master.config(menu=menu, bd=5)
 
-    # File
+        # File
         Edit = Menu(menu, tearoff=0)
         menu.add_cascade(label="Edit", menu=Edit)
         Edit.add_command(label="Clear", command=self.clear_chat)
