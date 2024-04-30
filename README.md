@@ -5,6 +5,7 @@
 </p>
 <h2 align="center">🚀 AlchemyChatBot is a chatbot for answering common questions from quora. 🚀</h2>
 
+## Usage Screenshot
 
 <img width="1696" alt="image" src="https://github.com/GirishCodeAlchemy/AlchemyChatBot/assets/143807663/b7b05b91-6ebd-4805-ac72-817a617fde28">
 
