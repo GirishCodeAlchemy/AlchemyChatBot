@@ -35,3 +35,36 @@ A feed-forward neural network (FNN) is used to train the intent-classification m
 - **`intents.json`**: This file defines user intents and provides training examples for each. It plays a crucial role in helping the chatbot accurately recognize and respond to user inputs.
 ****
 
+ ## Install Dependencies
+ Activate your virtual environment and install the required packages:
+
+ ```bash
+ (venv) pip install Flask torch torchvision nltk
+ ```
+
+ Or, install from the `requirements.txt` file:
+
+ ```bash
+ (venv) pip install -r requirements.txt
+ ```
+
+ ## Install NLTK Data
+ To download necessary NLTK data, run the following:
+
+ ```bash
+ (venv) python
+ >>> import nltk
+ >>> nltk.download('punkt')
+ ```
+
+ ## Customize `intents.json`
+ 
+ Modify the `intents.json` file to include your own intents and responses. This is where you can tailor the chatbot to your specific use case.
+
+ ## Model Training
+ Once the data is prepared, train the model using:
+
+ ```bash
+ (venv) python train.py
+ ```
+
