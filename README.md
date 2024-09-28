@@ -18,31 +18,31 @@ This project focuses on creating a smart chatbot using deep learning and Natural
 
 This project focuses on building a fully functional and effective chatbot system. The key components work together to create a robust platform capable of understanding and responding to user queries based on trained intents.
 
-## 1. Web Scraping for Data Collection
-The chatbot’s training data is obtained by scraping the **Qura database**. The scraped data is structured and stored for training the intent-based model. This step is crucial for gathering the data that will be used to teach the chatbot how to recognize various user intents and respond appropriately.
-
-## 2. Intent-Based Chatbot Development
-The core of the chatbot is an **intent-classification model** built using a **Feed-Forward Neural Network (FNN)**. The model is trained to classify user inputs into predefined intents. To achieve this, several **Natural Language Processing (NLP)** techniques from **NLTK** are utilized to preprocess both training data and real-time user inputs, enhancing the accuracy of the chatbot’s responses.
-
-### Key NLP Techniques:
-
-| Technique       | Description                                          | Usage                                                                                      |
-| --------------- | ---------------------------------------------------- | ------------------------------------------------------------------------------------------ |
-| **Tokenization**| Splits text into words or phrases (tokens).          | Helps the chatbot process and understand individual components of user input.               |
-| **Stemming**    | Reduces words to their base or root form.            | Groups similar words together to improve text analysis.                                     |
-| **Bag of Words**| Represents text as an unordered set of words.        | Converts text into numerical vectors, making it easier to train the model to recognize intents. |
-
-### Additional Details:
-- **Training Data**: The chatbot’s model is trained using a dataset that must be prepared in a **JSON format**.
-- **`intents.json`**: This critical file defines the user intents and provides associated training examples. It teaches the chatbot how to recognize and respond to different inputs by mapping sample phrases to specific intents.
-
-## 3. Graphical User Interface (GUI) with Tkinter
-The project also includes a user-friendly interface built using **Tkinter**, a popular Python library for creating graphical interfaces. The GUI allows users to interact with the chatbot in real time, making it easy to input queries and view the chatbot’s responses.
-
-### Key Features of the Tkinter UI:
-- Simple and intuitive interface for chatbot interaction.
-- Real-time response display for user inputs.
-- Easy integration with the intent-classification model.
+  ## 1. Web Scraping for Data Collection
+  The chatbot’s training data is obtained by scraping the **Qura database**. The scraped data is structured and stored for training the intent-based model. This step is crucial for gathering the data that will be used to teach the chatbot how to recognize various user intents and respond appropriately.
+  
+  ## 2. Intent-Based Chatbot Development
+  The core of the chatbot is an **intent-classification model** built using a **Feed-Forward Neural Network (FNN)**. The model is trained to classify user inputs into predefined intents. To achieve this, several **Natural Language Processing (NLP)** techniques from **NLTK** are utilized to preprocess both training data and real-time user inputs, enhancing the accuracy of the chatbot’s responses.
+  
+  ### Key NLP Techniques:
+  
+  | Technique       | Description                                          | Usage                                                                                      |
+  | --------------- | ---------------------------------------------------- | ------------------------------------------------------------------------------------------ |
+  | **Tokenization**| Splits text into words or phrases (tokens).          | Helps the chatbot process and understand individual components of user input.               |
+  | **Stemming**    | Reduces words to their base or root form.            | Groups similar words together to improve text analysis.                                     |
+  | **Bag of Words**| Represents text as an unordered set of words.        | Converts text into numerical vectors, making it easier to train the model to recognize intents. |
+  
+  ### Additional Details:
+  - **Training Data**: The chatbot’s model is trained using a dataset that must be prepared in a **JSON format**.
+  - **`intents.json`**: This critical file defines the user intents and provides associated training examples. It teaches the chatbot how to recognize and respond to different inputs by mapping sample phrases to specific intents.
+  
+  ## 3. Graphical User Interface (GUI) with Tkinter
+  The project also includes a user-friendly interface built using **Tkinter**, a popular Python library for creating graphical interfaces. The GUI allows users to interact with the chatbot in real time, making it easy to input queries and view the chatbot’s responses.
+  
+  ### Key Features of the Tkinter UI:
+  - Simple and intuitive interface for chatbot interaction.
+  - Real-time response display for user inputs.
+  - Easy integration with the intent-classification model.
 
 ---
 
